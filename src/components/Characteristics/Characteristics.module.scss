@@ -1,0 +1,59 @@
+.container {
+  background: #2D2D2D;
+  padding: 0 40px 50px 40px;
+  grid-column: span 2;
+}
+
+.title {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.table {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.row {
+  display: grid;
+  align-items: center;
+  height: 77px;
+  grid-template-columns: 470px 650px;
+  border: 4px solid #FFFFFF;
+}
+
+.name {
+  height: 100%;
+  background: #C27D60;
+  border-right: 4px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.value {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  justify-content: end;
+  padding-right: 45px;
+}

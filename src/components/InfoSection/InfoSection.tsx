@@ -6,6 +6,7 @@ interface Props {
 	title?: string
 	contentType?: "photo" | "mixed"
 	id?: string
+	columns?: number
 }
 
 export const InfoSection = (props: Props) => {

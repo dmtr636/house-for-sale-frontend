@@ -7,6 +7,7 @@ import {AboutHouse} from "../components/AboutHouse/AboutHouse";
 import {Render} from "../components/Render/Render";
 import {HouseLayout} from "../components/HouseLayout/HouseLayout";
 import "../styles/globals.scss"
+import {Characteristics} from "../components/Characteristics/Characteristics";
 
 const IndexPage = () => {
 	return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
 			<AboutHouse/>
 			<Render/>
 			<HouseLayout/>
+			<Characteristics/>
 		</Layout>
 	)
 }
