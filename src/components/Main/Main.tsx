@@ -9,7 +9,7 @@ export const Main = () => {
 		<div className={style.main}>
 			<div className={style.bg}>
 				<StaticImage
-					src={"../../images/Main/Photo.jpg"}
+					src={"../../images/main/Photo.jpg"}
 				 	alt={""}
 					placeholder="blurred"
 				/>

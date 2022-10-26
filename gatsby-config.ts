@@ -9,7 +9,25 @@ const config: GatsbyConfig = {
 	// If you use VSCode you can also use the GraphQL plugin
 	// Learn more at: https://gatsby.dev/graphql-typegen
 	graphqlTypegen: true,
-	plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+	plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-transformer-sharp",
+		{
+			resolve: `gatsby-plugin-sharp`,
+			options: {
+				defaults: {
+					formats: [`auto`, `webp`],
+					placeholder: `dominantColor`,
+					quality: 50,
+					breakpoints: [360, 768, 1080, 1366, 1920, 2560, 3840, 5120],
+					backgroundColor: `transparent`,
+					tracedSVGOptions: {},
+					blurredOptions: {},
+					jpgOptions: {},
+					pngOptions: {},
+					webpOptions: {},
+					avifOptions: {},
+				},
+			},
+		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
