@@ -1,0 +1,62 @@
+@import "src/styles/vars";
+
+.header {
+  height: 108px;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.navLink {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: $color-black;
+
+  &:hover {
+    color: $color-black-hover;
+  }
+}
+
+.social {
+  display: flex;
+  column-gap: 30px;
+  margin-left: auto;
+}
+
+.socialLink {
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.button {
+  width: 280px;
+  height: 100%;
+  background: $color-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 131%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  &:hover {
+    background: $color-main-hover;
+  }
+}
