@@ -1,14 +1,21 @@
 import {InfoSection} from "../InfoSection/InfoSection";
 import React from "react";
 import {StaticImage} from "gatsby-plugin-image";
+import * as style from "./HouseLayout.module.scss"
 
 export const HouseLayout = () => {
     return (
         <InfoSection title={"Планировка"} id={"layout"}>
             <StaticImage src={"../../images/houseLayout/firstFloor.jpg"} alt={""}/>
-            <div>1 floor</div>
+            <div className={style.title}>
+                Площадь первого<br/>
+                этажа
+            </div>
             <StaticImage src={"../../images/houseLayout/secondFloor.jpg"} alt={""}/>
-            <div>2 floor</div>
+            <div className={style.title}>
+                Площадь второго<br/>
+                этажа
+            </div>
         </InfoSection>
     )
 }

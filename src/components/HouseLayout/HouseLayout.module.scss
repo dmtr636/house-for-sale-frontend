@@ -1,0 +1,16 @@
+.title {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54.1479px;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+  color: #2D2D2D;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  row-gap: 30.74px;
+}
