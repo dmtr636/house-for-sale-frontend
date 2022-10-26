@@ -11,7 +11,7 @@ export const Main = () => {
 				<StaticImage
 					src={"../../images/main/Photo.jpg"}
 				 	alt={""}
-					placeholder="blurred"
+					placeholder={"blurred"}
 				/>
 			</div>
 			<div className={style.header}>
