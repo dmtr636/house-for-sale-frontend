@@ -17,7 +17,7 @@ const infoSecondFloor = [
     {name: "Коридор", value: "5 м"},
     {name: "Спальня 1", value: "10 м"},
     {name: "Спальня 2", value: "10 м"},
-    {name: "Оснвоная спальня", value: "32 м"},
+    {name: "Основная спальня", value: "32 м"},
 ]
 
 export const HouseLayout = () => {

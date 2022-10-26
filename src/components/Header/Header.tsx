@@ -5,7 +5,7 @@ import whatsappIcon from "../../images/header/Whatsapp.svg"
 import React from "react"
 
 const navLinks = [
-	{name: "Планировка", href: "#Layout"},
+	{name: "Планировка", href: "#layout"},
 	{name: "Дом сейчас", href: "#house-now"},
 	{name: "Местоположение", href: "#location"},
 ]

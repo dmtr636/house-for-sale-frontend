@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 export function useWindowDimension() {
     const [dimension, setDimension] = useState([
-        0,
-        0,
+        window.innerWidth,
+        window.innerHeight,
     ]);
     useEffect(() => {
         const debouncedResizeHandler = debounce(() => {
