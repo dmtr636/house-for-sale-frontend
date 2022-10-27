@@ -4,9 +4,8 @@ import * as style from "./InfoSection.module.scss"
 interface Props {
 	children: ReactNode
 	title?: string
-	contentType?: "photo" | "mixed"
+	contentType?: "photo" | "mixed" | "custom"
 	id?: string
-	columns?: number
 }
 
 export const InfoSection = (props: Props) => {
@@ -16,6 +15,8 @@ export const InfoSection = (props: Props) => {
 				return style.contentPhoto
 			case "mixed":
 				return style.contentMixed
+			case "custom":
+				return ""
 			default:
 				return style.content
 		}

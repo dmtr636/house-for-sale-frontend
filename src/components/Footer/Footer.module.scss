@@ -1,0 +1,21 @@
+@import "src/styles/vars";
+
+.footer {
+  background: #2D2D2D;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: $color-white;
+  padding: 42px 40px;
+  margin-top: 64px;
+  margin: 64px -40px 0 -40px;
+}
+
+.link:hover {
+  color: $color-white-hover
+}

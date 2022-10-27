@@ -1,0 +1,9 @@
+.photos {
+  display: grid;
+  grid-template-columns: 686px 494px;
+  grid-gap: 20px;
+}
+
+.photo2col {
+  grid-column: span 2;
+}

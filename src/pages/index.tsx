@@ -10,6 +10,9 @@ import "../styles/globals.scss"
 import {Characteristics} from "../components/Characteristics/Characteristics";
 import {Communications} from "../components/Communications/Communications";
 import {AdditionalWork} from "../components/AdditionalWork/AdditionalWork";
+import {HouseNow} from "../components/HouseNow/HouseNow";
+import {Location} from "../components/Location/Location";
+import {Footer} from "../components/Footer/Footer";
 
 const IndexPage = () => {
     return (
@@ -22,6 +25,9 @@ const IndexPage = () => {
             <Characteristics/>
             <Communications/>
             <AdditionalWork/>
+            <HouseNow/>
+            <Location/>
+            <Footer/>
         </Layout>
     )
 }
