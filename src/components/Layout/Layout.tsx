@@ -8,7 +8,7 @@ export const Layout = (props: { children: ReactNode }) => {
 
 	useEffect(() => {
 		if (width > 1700) {
-			setScale(Math.round(width / 17000) / 10)
+			setScale(Math.round(width / 170) / 10)
 		} else {
 			setScale(1)
 		}
