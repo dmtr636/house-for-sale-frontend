@@ -12,6 +12,7 @@ export const Main = () => {
 					src={"../../images/main/Photo.jpg"}
 					alt={""}
 					placeholder={"blurred"}
+					width={1200}
 				/>
 			</div>
 			<div className={style.header}>

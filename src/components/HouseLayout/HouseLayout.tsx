@@ -23,7 +23,12 @@ const infoSecondFloor = [
 export const HouseLayout = () => {
     return (
         <InfoSection title={"Планировка"} id={"layout"}>
-            <StaticImage src={"../../images/houseLayout/firstFloor.jpg"} alt={""}/>
+            <StaticImage
+                src={"../../images/houseLayout/firstFloor.jpg"}
+                alt={""}
+                width={591}
+                placeholder={"blurred"}
+            />
             <div>
                 <div className={style.title}>
                     Площадь первого<br/>
@@ -42,7 +47,12 @@ export const HouseLayout = () => {
                     )}
                 </div>
             </div>
-            <StaticImage src={"../../images/houseLayout/secondFloor.jpg"} alt={""}/>
+            <StaticImage
+                src={"../../images/houseLayout/secondFloor.jpg"}
+                alt={""}
+                width={591}
+                placeholder={"blurred"}
+            />
             <div>
                 <div className={style.title}>
                     Площадь второго<br/>
