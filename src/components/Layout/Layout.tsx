@@ -1,6 +1,6 @@
 import * as style from "./Layout.module.scss"
 import {useWindowDimension} from "../../hooks/useWindowDimensions";
-import React, {ReactNode, useEffect, useState} from "react";
+import React, {ReactNode, useEffect, useRef, useState} from "react";
 
 export const Layout = (props: { children: ReactNode }) => {
 	const [width, _] = useWindowDimension()
@@ -8,7 +8,7 @@ export const Layout = (props: { children: ReactNode }) => {
 
 	useEffect(() => {
 		if (width > 1700) {
-			setScale(Math.round(width / 170) / 10)
+			setScale(width / 1700)
 		} else {
 			setScale(1)
 		}
@@ -17,7 +17,10 @@ export const Layout = (props: { children: ReactNode }) => {
 	return (
 		<div
 			className={style.layout}
-			style={{transform: `scale(${scale})`}}
+			style={{
+				zoom: `${scale}`,
+				transform: `scale(${scale})`
+			}}
 		>
 			{props.children}
 		</div>

@@ -2,4 +2,9 @@
   max-width: 1200px;
   margin: 0 auto;
   transform-origin: top;
+
+  @supports not (-moz-appearance:none){
+    transform: scale(1) !important;
+  }
 }
+
