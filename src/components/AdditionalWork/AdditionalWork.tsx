@@ -71,6 +71,17 @@ export const AdditionalWork = () => {
 					)}
 				</div>
 			)}
+			<div className={style.footer}>
+				<div className={style.footerLeft}>
+					По всем работам будет представлена подробная смета после согласования материалов и видов работ.
+					Вы так же сможете выполнить все эти работы самостоятельно, либо привлечь сторонюю организацию,
+					но мы уверены, что наши цены и качество вас устроят, и мы дадим гарантию на дом.
+				</div>
+				<div className={style.footerRight}>
+					<div className={style.footerRightTop}>Итого под ключ</div>
+					<div className={style.footerRightBottom}>1 000 000-1 500 000 ₽</div>
+				</div>
+			</div>
 		</div>
 	)
 }
