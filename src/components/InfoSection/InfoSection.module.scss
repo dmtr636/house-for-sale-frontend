@@ -2,6 +2,10 @@
   margin-top: 64px;
 }
 
+.darkBg {
+  background: #2D2D2D;
+}
+
 .title {
   margin-bottom: 50px;
   font-family: 'Inter Tight';
@@ -11,6 +15,10 @@
   line-height: 48px;
   letter-spacing: 0.06em;
   color: #2D2D2D;
+}
+
+.titleLight {
+  color: #FFFFFF;
 }
 
 .content {

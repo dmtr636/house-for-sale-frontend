@@ -7,13 +7,12 @@ import {StaticImage} from "gatsby-plugin-image";
 export const Main = () => {
 	return (
 		<div className={style.main}>
-			<div className={style.bg}>
-				<StaticImage
-					src={"../../images/main/Photo.jpg"}
-				 	alt={""}
-					placeholder={"blurred"}
-				/>
-			</div>
+			<StaticImage
+				src={"../../images/main/Photo.jpg"}
+				alt={""}
+				placeholder={"blurred"}
+				className={style.bg}
+			/>
 			<div className={style.header}>
 				В продаже<br/>
 				двухэтажный дом!

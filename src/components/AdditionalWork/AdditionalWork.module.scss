@@ -1,0 +1,48 @@
+.container {
+  background: #2D2D2D;
+  padding: 50px 40px;
+  margin-top: 64px;
+}
+
+.title {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.table {
+  margin-top: 50px;
+  border: 4px solid #FFFFFF;
+}
+
+.tableHead {
+  background: #C27D60;
+  padding: 28px 44px;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  white-space: pre-line;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 44px;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  border-top: 4px solid #FFFFFF;
+  white-space: pre-line;
+}

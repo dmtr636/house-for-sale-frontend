@@ -8,6 +8,8 @@ import {Render} from "../components/Render/Render";
 import {HouseLayout} from "../components/HouseLayout/HouseLayout";
 import "../styles/globals.scss"
 import {Characteristics} from "../components/Characteristics/Characteristics";
+import {Communications} from "../components/Communications/Communications";
+import {AdditionalWork} from "../components/AdditionalWork/AdditionalWork";
 
 const IndexPage = () => {
     return (
@@ -18,6 +20,8 @@ const IndexPage = () => {
             <Render/>
             <HouseLayout/>
             <Characteristics/>
+            <Communications/>
+            <AdditionalWork/>
         </Layout>
     )
 }
