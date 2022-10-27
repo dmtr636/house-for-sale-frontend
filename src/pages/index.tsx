@@ -10,16 +10,16 @@ import "../styles/globals.scss"
 import {Characteristics} from "../components/Characteristics/Characteristics";
 
 const IndexPage = () => {
-	return (
-		<Layout>
-			<Header/>
-			<Main/>
-			<AboutHouse/>
-			<Render/>
-			<HouseLayout/>
-			<Characteristics/>
-		</Layout>
-	)
+    return (
+        <Layout>
+            <Header/>
+            <Main/>
+            <AboutHouse/>
+            <Render/>
+            <HouseLayout/>
+            <Characteristics/>
+        </Layout>
+    )
 }
 
 export default IndexPage
