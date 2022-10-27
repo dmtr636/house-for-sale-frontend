@@ -38,12 +38,13 @@ const list = [
 export const Communications = () => {
 	return (
 		<div className={style.container}>
-			<StaticImage
-				src={"../../images/communications/bg.jpg"}
-				alt={""}
-				placeholder={"blurred"}
-				className={style.bg}
-			/>
+			<div className={style.bg}>
+				<StaticImage
+					src={"../../images/communications/bg.jpg"}
+					alt={""}
+					placeholder={"blurred"}
+				/>
+			</div>
 			<div className={style.title}>
 				Коммуникации
 			</div>
