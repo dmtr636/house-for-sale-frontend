@@ -1,0 +1,24 @@
+.container {
+  width: 901px;
+  height: 561px;
+  background: #FFFFFF;
+  padding: 70px 40px 40px 40px;
+  position: relative;
+}
+
+.title {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2D2D2D;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

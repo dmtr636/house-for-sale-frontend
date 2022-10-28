@@ -1,0 +1,9 @@
+.button {
+  background: url("../../images/common/closeButton.svg");
+  height: 50px;
+  width: 50px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

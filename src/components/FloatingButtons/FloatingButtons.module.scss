@@ -1,0 +1,17 @@
+.container {
+  position: sticky;
+  bottom: 0;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  background: url("../../images/arrow/arrowPc.svg");
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

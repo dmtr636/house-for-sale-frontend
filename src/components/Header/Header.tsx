@@ -16,9 +16,9 @@ const socialLinks = [
 	{icon: mailIcon, href: "mailto:89150238877@mail.ru"}
 ]
 
-export const Header = () => {
+export const Header = (props: {showForm: () => void}) => {
 	return (
-		<header className={style.header}>
+		<header className={style.header} id={"header"}>
 			<nav className={style.nav}>
 				{navLinks.map(link =>
 					<a
@@ -43,7 +43,10 @@ export const Header = () => {
 					</a>
 				)}
 			</div>
-			<button className={style.button}>
+			<button
+				className={style.button}
+				onClick={props.showForm}
+			>
 				Перезвоните мне<br/>
 				за 30 секунд
 			</button>

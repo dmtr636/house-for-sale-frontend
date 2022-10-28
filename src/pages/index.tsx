@@ -1,4 +1,5 @@
 import * as React from "react"
+import {useEffect, useState} from "react"
 import type {HeadFC} from "gatsby"
 import {Header} from "../components/Header/Header";
 import {Layout} from "../components/Layout/Layout";
@@ -13,23 +14,41 @@ import {AdditionalWork} from "../components/AdditionalWork/AdditionalWork";
 import {HouseNow} from "../components/HouseNow/HouseNow";
 import {Location} from "../components/Location/Location";
 import {Footer} from "../components/Footer/Footer";
+import {FloatingButtons} from "../components/FloatingButtons/FloatingButtons";
+import {Form} from "../components/Form/Form";
 
 const IndexPage = () => {
-    return (
-        <Layout>
-            <Header/>
-            <Main/>
-            <AboutHouse/>
-            <Render/>
-            <HouseLayout/>
-            <Characteristics/>
-            <Communications/>
-            <AdditionalWork/>
-            <HouseNow/>
-            <Location/>
-            <Footer/>
-        </Layout>
-    )
+	const [showForm, setShowForm] = useState(false)
+
+	useEffect(() => {
+		if (showForm) {
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.style.overflow = 'unset'
+		}
+	}, [showForm])
+
+	return (
+		<>
+			<Layout>
+				<Header showForm={() => setShowForm(true)}/>
+				<Main/>
+				<AboutHouse/>
+				<Render/>
+				<HouseLayout/>
+				<Characteristics/>
+				<Communications/>
+				<AdditionalWork/>
+				<HouseNow/>
+				<Location/>
+				<Footer/>
+				<FloatingButtons/>
+			</Layout>
+			{showForm &&
+                <Form onClose={() => setShowForm(false)}/>
+			}
+		</>
+	)
 }
 
 export default IndexPage
