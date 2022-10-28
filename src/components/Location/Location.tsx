@@ -1,6 +1,4 @@
-import * as style from "./Location.scss"
 import {InfoSection} from "../InfoSection/InfoSection";
-import {StaticImage} from "gatsby-plugin-image";
 import React from "react";
 
 export const Location = () => {

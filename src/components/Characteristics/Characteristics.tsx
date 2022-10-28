@@ -44,7 +44,7 @@ const insulationThickness = [
 	},
 	{
 		name: "Внутренние стены, перегородки",
-		value: <div className={style.value}>150 мм / 0 мм (перехлёстное)</div>
+		value: <div className={style.value}>150 мм / 100 мм (перехлёстное)</div>
 	},
 ]
 
