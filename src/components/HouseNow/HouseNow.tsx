@@ -11,20 +11,19 @@ export const HouseNow = () => {
 					src={"../../images/houseNow/photo1.jpg"}
 					alt={""}
 					placeholder={"blurred"}
-					width={686}
+					sizes={"60vw"}
 				/>
 				<StaticImage
 					src={"../../images/houseNow/photo2.jpg"}
 					alt={""}
 					placeholder={"blurred"}
-					width={494}
+					sizes={"40vw"}
 				/>
 				<StaticImage
 					src={"../../images/houseNow/photo3.jpg"}
 					alt={""}
 					placeholder={"blurred"}
 					className={style.photo2col}
-					width={1200}
 				/>
 			</div>
 		</InfoSection>

@@ -43,7 +43,6 @@ export const Communications = () => {
 					src={"../../images/communications/bg.jpg"}
 					alt={""}
 					placeholder={"blurred"}
-					width={1200}
 				/>
 			</div>
 			<div className={style.title}>

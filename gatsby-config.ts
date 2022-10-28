@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
 					formats: [`auto`, `webp`],
 					placeholder: `blurred`,
 					quality: 75,
-					breakpoints: [360, 460, 768, 1280, 1366, 1920, 2560, 3840, 5120],
+					breakpoints: [2560, 1920, 1366, 768],
 					backgroundColor: `transparent`,
 					tracedSVGOptions: {},
 					blurredOptions: {},

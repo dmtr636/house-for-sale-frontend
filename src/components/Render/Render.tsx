@@ -9,13 +9,13 @@ export const Render = () => {
 				src={"../../images/render/Render1.jpg"}
 				placeholder={"blurred"}
 				alt={""}
-				width={590}
+				sizes={"50vw"}
 			/>
 			<StaticImage
 				src={"../../images/render/Render2.jpg"}
 				placeholder={"blurred"}
 				alt={""}
-				width={590}
+				sizes={"50vw"}
 			/>
 		</InfoSection>
 	)

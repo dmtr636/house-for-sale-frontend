@@ -26,8 +26,8 @@ export const HouseLayout = () => {
             <StaticImage
                 src={"../../images/houseLayout/firstFloor.jpg"}
                 alt={""}
-                width={591}
                 placeholder={"blurred"}
+                sizes={"50vw"}
             />
             <div>
                 <div className={style.title}>
@@ -50,8 +50,8 @@ export const HouseLayout = () => {
             <StaticImage
                 src={"../../images/houseLayout/secondFloor.jpg"}
                 alt={""}
-                width={591}
                 placeholder={"blurred"}
+                sizes={"50vw"}
             />
             <div>
                 <div className={style.title}>

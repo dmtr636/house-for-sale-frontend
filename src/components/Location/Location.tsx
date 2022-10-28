@@ -10,7 +10,6 @@ export const Location = () => {
 				src={"../../images/location/map.jpg"}
 				alt={""}
 				placeholder={"blurred"}
-				width={1200}
 			/>
 		</InfoSection>
 	)
