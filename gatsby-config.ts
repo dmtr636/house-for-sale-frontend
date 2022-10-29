@@ -38,18 +38,16 @@ const config: GatsbyConfig = {
 			__key: "images"
 		},
 		{
-			resolve: `gatsby-omni-font-loader`,
+			resolve: `gatsby-plugin-google-fonts-v2`,
 			options: {
-				enableListener: true,
-				preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-				web: [
+				fonts: [
 					{
-						name: `Inter Tight`,
-						file: `https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&display=swap`,
-					},
-				],
-			},
-		},
+						family: 'Inter Tight',
+						weights: ['300', '400', '500', '600', '700', '800']
+					}
+				]
+			}
+		}
 	],
 };
 
