@@ -5,8 +5,8 @@ import {CloseButton} from "../common/CloseButton";
 
 const PrivacyPolicy = (props: {onClose: () => void}) => {
 	return (
-		<Modal>
-			<div className={style.container}>
+		<Modal onBackdropClick={props.onClose}>
+			<div className={style.container} onClick={event => event.stopPropagation()}>
 				<div className={style.closeButton}>
 					<CloseButton onClick={props.onClose} />
 				</div>

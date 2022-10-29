@@ -17,6 +17,7 @@ import {Footer} from "../components/Footer/Footer";
 import {FloatingButtons} from "../components/FloatingButtons/FloatingButtons";
 import {Form} from "../components/Form/Form";
 import {Modal} from "../components/Modal/Modal";
+import {Loading} from "../components/Modal/Loading";
 
 const PrivacyPolicy = lazy(() => import("../components/PrivacyPolicy/PrivacyPolicy"))
 
@@ -55,7 +56,7 @@ const IndexPage = () => {
 				/>
 			}
 			{showPrivacyPolicy &&
-                <Suspense fallback={<Modal><h1>Загрузка...</h1></Modal>}>
+                <Suspense fallback={<Loading/>}>
                     <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)}/>
                 </Suspense>
 			}
