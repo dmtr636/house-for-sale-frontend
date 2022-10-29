@@ -1,5 +1,5 @@
 import * as React from "react"
-import {useEffect, useState} from "react"
+import {lazy, Suspense, useEffect, useState} from "react"
 import type {HeadFC} from "gatsby"
 import {Header} from "../components/Header/Header";
 import {Layout} from "../components/Layout/Layout";
@@ -16,17 +16,21 @@ import {Location} from "../components/Location/Location";
 import {Footer} from "../components/Footer/Footer";
 import {FloatingButtons} from "../components/FloatingButtons/FloatingButtons";
 import {Form} from "../components/Form/Form";
+import {Modal} from "../components/Modal/Modal";
+
+const PrivacyPolicy = lazy(() => import("../components/PrivacyPolicy/PrivacyPolicy"))
 
 const IndexPage = () => {
 	const [showForm, setShowForm] = useState(false)
+	const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false)
 
 	useEffect(() => {
-		if (showForm) {
+		if (showForm || showPrivacyPolicy) {
 			document.body.style.overflow = 'hidden'
 		} else {
 			document.body.style.overflow = 'unset'
 		}
-	}, [showForm])
+	}, [showForm, showPrivacyPolicy])
 
 	return (
 		<>
@@ -41,11 +45,19 @@ const IndexPage = () => {
 				<AdditionalWork/>
 				<HouseNow/>
 				<Location/>
-				<Footer/>
+				<Footer showPrivacyPolicy={() => setShowPrivacyPolicy(true)}/>
 				<FloatingButtons/>
 			</Layout>
 			{showForm &&
-                <Form onClose={() => setShowForm(false)}/>
+                <Form
+					onClose={() => setShowForm(false)}
+					showPrivacyPolicy={() => setShowPrivacyPolicy(true)}
+				/>
+			}
+			{showPrivacyPolicy &&
+                <Suspense fallback={<Modal><h1>Загрузка...</h1></Modal>}>
+                    <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)}/>
+                </Suspense>
 			}
 		</>
 	)

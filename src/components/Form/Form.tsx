@@ -4,7 +4,7 @@ import {Modal} from "../Modal/Modal";
 import {CloseButton} from "../common/CloseButton";
 import InputMask from "react-input-mask";
 
-export const Form = (props: {onClose: () => void}) => {
+export const Form = (props: {onClose: () => void; showPrivacyPolicy: () => void}) => {
 	const [name, setName] = useState("")
 	const [phone, setPhone] = useState("")
 	const [checked, setChecked] = useState(false)
@@ -56,7 +56,12 @@ export const Form = (props: {onClose: () => void}) => {
 							/>
 							<div className={style.politicsText}>
 								{"Нажимая на кнопку вы соглашаетесь с "}
-								<a className={style.link}><b>политикой конфиденциальности</b></a>
+								<a
+									className={style.link}
+									onClick={props.showPrivacyPolicy}
+								>
+									<b>политикой конфиденциальности</b>
+								</a>
 							</div>
 						</div>
 						<button
