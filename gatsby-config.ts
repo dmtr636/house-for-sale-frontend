@@ -36,17 +36,6 @@ const config: GatsbyConfig = {
 				"path": "./src/images/"
 			},
 			__key: "images"
-		},
-		{
-			resolve: `gatsby-plugin-google-fonts-v2`,
-			options: {
-				fonts: [
-					{
-						family: 'Inter Tight',
-						weights: ['300', '400', '500', '600', '700', '800']
-					}
-				]
-			}
 		}
 	],
 };

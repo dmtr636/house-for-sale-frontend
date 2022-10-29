@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/inter-tight": "^4.5.0",
     "gatsby": "^4.24.5",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-fonts-v2": "^1.0.1",
