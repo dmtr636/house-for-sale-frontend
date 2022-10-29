@@ -18,7 +18,12 @@ import {FloatingButtons} from "../components/FloatingButtons/FloatingButtons";
 import {Form} from "../components/Form/Form";
 import {Loading} from "../components/Modal/Loading";
 
-import "@fontsource/inter-tight"
+import "@fontsource/inter-tight/300.css"
+import "@fontsource/inter-tight/400.css"
+import "@fontsource/inter-tight/500.css"
+import "@fontsource/inter-tight/600.css"
+import "@fontsource/inter-tight/700.css"
+import "@fontsource/inter-tight/800.css"
 
 const PrivacyPolicy = lazy(() => import("../components/PrivacyPolicy/PrivacyPolicy"))
 
