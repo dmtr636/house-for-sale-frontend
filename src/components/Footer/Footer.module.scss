@@ -14,8 +14,23 @@
   padding: 42px 40px;
   margin-top: 64px;
   margin: 64px -40px 0 -40px;
+
+  @include mobile {
+    width: 100vw;
+    margin-left: calc((300px - 100vw)/2);
+    padding: 20px calc((100vw - 300px) / 2);
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .link:hover {
   color: $color-white-hover
+}
+
+.date {
+  @include mobile {
+    display: none;
+  }
 }

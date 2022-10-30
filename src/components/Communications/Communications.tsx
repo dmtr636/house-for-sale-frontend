@@ -6,6 +6,7 @@ import Severage from "../../images/communications/Severage.svg"
 import Warm from "../../images/communications/Warm.svg"
 import Water from "../../images/communications/Water.svg"
 import Ventilation from "../../images/communications/Ventilation.svg"
+import {isMobile} from "../../utils/isMobile";
 
 const list = [
 	{
@@ -37,27 +38,35 @@ const list = [
 
 export const Communications = () => {
 	return (
-		<div className={style.container}>
-			<div className={style.bg}>
-				<StaticImage
-					src={"../../images/communications/bg.jpg"}
-					alt={""}
-					placeholder={"blurred"}
-				/>
-			</div>
-			<div className={style.title}>
-				Коммуникации
-			</div>
-			<div className={style.list}>
-				{list.map(row =>
-					<div className={style.row}>
-						<img src={row.icon} alt={""} />
-						<div className={style.col}>
-							<div className={style.colTitle}>{row.title}</div>
-							<div className={style.colText}>{row.text}</div>
+		<div>
+			{isMobile() &&
+                <div className={style.titleMobile}>
+                    Коммуникации
+                </div>
+			}
+			<div className={style.container}>
+				<div className={style.bg}>
+					<StaticImage
+						src={"../../images/communications/bg.jpg"}
+						alt={""}
+						placeholder={"blurred"}
+						style={{height: "100%"}}
+					/>
+				</div>
+				<div className={style.title}>
+					Коммуникации
+				</div>
+				<div className={style.list}>
+					{list.map(row =>
+						<div className={style.row}>
+							<img src={row.icon} alt={""} />
+							<div className={style.col}>
+								<div className={style.colTitle}>{row.title}</div>
+								<div className={style.colText}>{row.text}</div>
+							</div>
 						</div>
-					</div>
-				)}
+					)}
+				</div>
 			</div>
 		</div>
 	)

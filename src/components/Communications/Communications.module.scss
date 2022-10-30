@@ -1,7 +1,16 @@
+@import "src/styles/vars";
+
 .container {
   padding: 50px 40px;
   position: relative;
   margin-top: 64px;
+
+  @include mobile {
+    width: 100vw;
+    margin-left: calc((300px - 100vw)/2);
+    padding: 20px calc((100vw - 300px) / 2);
+    margin-top: 0;
+  }
 }
 
 .bg {
@@ -22,6 +31,21 @@
   line-height: 48px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.titleMobile {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-black;
+  margin-top: 40px;
 }
 
 .list {
@@ -29,17 +53,30 @@
   grid-row-gap: 50px;
   width: 737px;
   margin-top: 50px;
+
+  @include mobile {
+    width: 300px;
+    margin-top: 20px;
+  }
 }
 
 .row {
   display: flex;
   align-items: center;
   column-gap: 24px;
+
+  @include mobile {
+    column-gap: 20px;
+  }
 }
 
 .col {
   display: grid;
   grid-row-gap: 20px;
+
+  @include mobile {
+    grid-row-gap: 10px;
+  }
 }
 
 .colTitle {
@@ -50,6 +87,11 @@
   line-height: 39px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .colText {
@@ -60,4 +102,9 @@
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }

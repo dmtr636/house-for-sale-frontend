@@ -35,7 +35,7 @@ export const Main = () => {
 			<div className={style.panel}>
 				<a
 					className={style.panelLink}
-					href={"https://yandex.ru/maps/6/kaluga/?ll=36.261215%2C54.513845&z=12"}
+					href={"https://yandex.ru/maps/-/CCU6EYRtgD"}
 					target={"_blank"}
 					rel={"noreferrer"}
 				>

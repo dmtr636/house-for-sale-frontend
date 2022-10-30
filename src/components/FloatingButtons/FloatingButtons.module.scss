@@ -1,3 +1,5 @@
+@import "src/styles/vars";
+
 .container {
   position: sticky;
   bottom: 0;
@@ -14,4 +16,21 @@
   &:hover {
     filter: brightness(1.1);
   }
+
+  @include mobile {
+    height: 50px;
+    width: 50px;
+    left: 0;
+    right: unset;
+    background-size: cover;
+  }
+}
+
+.callButton {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background: url("../../images/common/callButton.svg");
 }

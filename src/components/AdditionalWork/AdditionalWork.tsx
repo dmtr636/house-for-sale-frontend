@@ -66,7 +66,7 @@ export const AdditionalWork = () => {
 					{table.rows.map(row =>
 						<div className={style.row}>
 							{row.text}
-							<div>{row.value}</div>
+							{row.value !== "" && <div>{row.value}</div>}
 						</div>
 					)}
 				</div>

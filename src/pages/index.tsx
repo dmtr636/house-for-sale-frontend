@@ -20,6 +20,12 @@ import {AboutHouse} from "../components/AboutHouse/AboutHouse";
 import {Render} from "../components/Render/Render";
 import {HouseLayout} from "../components/HouseLayout/HouseLayout";
 import {Characteristics} from "../components/Characteristics/Characteristics";
+import {Communications} from "../components/Communications/Communications";
+import {AdditionalWork} from "../components/AdditionalWork/AdditionalWork";
+import {HouseNow} from "../components/HouseNow/HouseNow";
+import {Location} from "../components/Location/Location";
+import {Footer} from "../components/Footer/Footer";
+import {FloatingButtons} from "../components/FloatingButtons/FloatingButtons";
 
 const PrivacyPolicy = lazy(() => import("../components/PrivacyPolicy/PrivacyPolicy"))
 
@@ -46,12 +52,12 @@ const IndexPage = () => {
 				<Render/>
 				<HouseLayout/>
 				<Characteristics/>
-				{/*<Communications/>*/}
-				{/*<AdditionalWork/>*/}
-				{/*<HouseNow/>*/}
-				{/*<Location/>*/}
-				{/*<Footer showPrivacyPolicy={() => setShowPrivacyPolicy(true)}/>*/}
-				{/*<FloatingButtons/>*/}
+				<Communications/>
+				<AdditionalWork/>
+				<HouseNow/>
+				<Location/>
+				<Footer showPrivacyPolicy={() => setShowPrivacyPolicy(true)}/>
+				<FloatingButtons/>
 			</Layout>
 			{showForm &&
                 <Form

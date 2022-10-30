@@ -10,7 +10,7 @@ export const Footer = (props: {showPrivacyPolicy: () => void}) => {
 			>
 				Политика конфиденциальности
 			</a>
-			<div>2022</div>
+			<div className={style.date}>2022</div>
 		</div>
 	)
 }

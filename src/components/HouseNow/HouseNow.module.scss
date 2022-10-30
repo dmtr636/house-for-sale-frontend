@@ -1,9 +1,19 @@
+@import "src/styles/vars";
+
 .photos {
   display: grid;
   grid-template-columns: 686px 494px;
   grid-gap: 20px;
+
+  @include mobile {
+    grid-template-columns: auto;
+  }
 }
 
 .photo2col {
   grid-column: span 2;
+
+  @include mobile {
+    grid-column: initial;
+  }
 }
