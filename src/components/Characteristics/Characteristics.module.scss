@@ -1,7 +1,15 @@
+@import "src/styles/vars";
+
 .container {
   background: #2D2D2D;
   padding: 0 40px 50px 40px;
   grid-column: span 2;
+
+  @include mobile {
+    width: 100vw;
+    margin-left: calc((300px - 100vw)/2);
+    padding: 0 calc((100vw - 300px) / 2) 20px calc((100vw - 300px) / 2);
+  }
 }
 
 .title {
@@ -13,12 +21,24 @@
   letter-spacing: 0.06em;
   color: #FFFFFF;
   margin-top: 50px;
+
+  @include mobile {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+  }
 }
 
 .table {
   display: grid;
   grid-gap: 20px;
   margin-top: 30px;
+
+  @include mobile {
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
 }
 
 .row {
@@ -27,6 +47,13 @@
   height: 77px;
   grid-template-columns: 470px 650px;
   border: 4px solid #FFFFFF;
+
+  @include mobile {
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: 39px auto;
+    border: 2px solid #FFFFFF;
+  }
 }
 
 .name {
@@ -43,6 +70,14 @@
   line-height: 29px;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 18px;
+    border-right: none;
+    border-bottom: 2px solid #FFFFFF;
+  }
 }
 
 .value {
@@ -56,4 +91,11 @@
   color: #FFFFFF;
   justify-content: end;
   padding-right: 45px;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    padding: 8px 18px;
+  }
 }

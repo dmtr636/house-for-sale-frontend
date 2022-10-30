@@ -1,3 +1,5 @@
+@import "src/styles/vars";
+
 .layout {
   max-width: 1200px;
   margin: 0 auto;
@@ -5,6 +7,10 @@
 
   @supports not (-moz-appearance:none){
     transform: scale(1) !important;
+  }
+
+  @include mobile {
+    max-width: 300px;
   }
 }
 

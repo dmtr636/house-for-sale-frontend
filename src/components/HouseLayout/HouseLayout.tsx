@@ -2,6 +2,7 @@ import {InfoSection} from "../InfoSection/InfoSection";
 import React from "react";
 import {StaticImage} from "gatsby-plugin-image";
 import * as style from "./HouseLayout.module.scss"
+import {getSizes} from "../../utils/sizes";
 
 const infoFirstFloor = [
     {name: "Терасса", value: "15 м"},
@@ -27,7 +28,7 @@ export const HouseLayout = () => {
                 src={"../../images/houseLayout/firstFloor.jpg"}
                 alt={""}
                 placeholder={"blurred"}
-                sizes={"50vw"}
+                sizes={getSizes(50)}
             />
             <div>
                 <div className={style.title}>
@@ -51,7 +52,7 @@ export const HouseLayout = () => {
                 src={"../../images/houseLayout/secondFloor.jpg"}
                 alt={""}
                 placeholder={"blurred"}
-                sizes={"50vw"}
+                sizes={getSizes(50)}
             />
             <div>
                 <div className={style.title}>

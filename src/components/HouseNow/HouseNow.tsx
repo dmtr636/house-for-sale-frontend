@@ -2,6 +2,7 @@ import * as style from "./HouseNow.module.scss"
 import {InfoSection} from "../InfoSection/InfoSection";
 import React from "react";
 import {StaticImage} from "gatsby-plugin-image";
+import {getSizes} from "../../utils/sizes";
 
 export const HouseNow = () => {
 	return (
@@ -11,13 +12,13 @@ export const HouseNow = () => {
 					src={"../../images/houseNow/photo1.jpg"}
 					alt={""}
 					placeholder={"blurred"}
-					sizes={"60vw"}
+					sizes={getSizes(60)}
 				/>
 				<StaticImage
 					src={"../../images/houseNow/photo2.jpg"}
 					alt={""}
 					placeholder={"blurred"}
-					sizes={"40vw"}
+					sizes={getSizes(40)}
 				/>
 				<StaticImage
 					src={"../../images/houseNow/photo3.jpg"}

@@ -1,6 +1,7 @@
 import React from "react";
 import {InfoSection} from "../InfoSection/InfoSection";
 import {StaticImage} from "gatsby-plugin-image";
+import {getSizes} from "../../utils/sizes";
 
 export const Render = () => {
 	return (
@@ -9,13 +10,13 @@ export const Render = () => {
 				src={"../../images/render/Render1.jpg"}
 				placeholder={"blurred"}
 				alt={""}
-				sizes={"50vw"}
+				sizes={getSizes(50)}
 			/>
 			<StaticImage
 				src={"../../images/render/Render2.jpg"}
 				placeholder={"blurred"}
 				alt={""}
-				sizes={"50vw"}
+				sizes={getSizes(50)}
 			/>
 		</InfoSection>
 	)

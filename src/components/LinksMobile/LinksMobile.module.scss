@@ -1,0 +1,32 @@
+@import "src/styles/vars";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  @include not-mobile {
+    display: none;
+  }
+}
+
+.social {
+  display: flex;
+  column-gap: 30px;
+}
+
+.socialLink {
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.button {
+  background: url("../../images/linksMobile/Call.svg");
+  width: 100px;
+  height: 40px;
+
+  &:active {
+    opacity: 0.85;
+  }
+}

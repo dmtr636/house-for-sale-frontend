@@ -4,6 +4,10 @@
   height: 108px;
   display: flex;
   align-items: center;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav {

@@ -10,7 +10,7 @@ const navLinks = [
 	{name: "Местоположение", href: "#location"},
 ]
 
-const socialLinks = [
+export const socialLinks = [
 	{icon: whatsappIcon, href: "https://wa.me/+79774888608"},
 	{icon: telegramIcon, href: "https://t.me/+79774888608"},
 	{icon: mailIcon, href: "mailto:89150238877@mail.ru"}
@@ -39,7 +39,7 @@ export const Header = (props: {showForm: () => void}) => {
 						target={"_blank"}
 						rel={"noreferrer"}
 					>
-						<img src={link.icon.src}/>
+						<img src={link.icon}/>
 					</a>
 				)}
 			</div>
