@@ -53,6 +53,20 @@ export const Communications = () => {
 						style={{height: "100%"}}
 					/>
 				</div>
+				<div className={style.bgMobile}>
+					<StaticImage
+						src={"../../images/communications/bgMobile.jpg"}
+						alt={""}
+						placeholder={"blurred"}
+						style={{height: "100%"}}
+						sizes={
+							"(max-width: 359px) 150vw," +
+							"(max-width: 399px) 130vw," +
+							"(max-width: 479px) 120vw," +
+							"100vw"
+						}
+					/>
+				</div>
 				<div className={style.title}>
 					Коммуникации
 				</div>
