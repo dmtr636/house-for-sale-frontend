@@ -22,7 +22,7 @@ export const Header = (props: {showForm: () => void}) => {
 			<nav className={style.nav}>
 				{navLinks.map(link =>
 					<a
-						href={link.href}
+						onClick={() => document.querySelector(link.href)?.scrollIntoView()}
 						className={style.navLink}
 						key={link.name}
 					>

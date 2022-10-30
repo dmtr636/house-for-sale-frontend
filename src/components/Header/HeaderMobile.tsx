@@ -54,10 +54,12 @@ export const HeaderMobile = () => {
 				<div className={style.navLinks}>
 					{navLinks.map(link =>
 						<a
-							href={link.href}
 							className={style.navLink}
 							key={link.name}
-							onClick={handleCloseMenu}
+							onClick={() => {
+								handleCloseMenu()
+								document.querySelector(link.href)?.scrollIntoView()
+							}}
 						>
 							{link.name}
 						</a>
