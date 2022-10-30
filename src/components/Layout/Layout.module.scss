@@ -11,6 +11,8 @@
 
   @include mobile {
     max-width: 300px;
+    transform: unset !important;
+    zoom: unset !important;
   }
 }
 

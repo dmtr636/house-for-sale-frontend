@@ -3,6 +3,11 @@
 .container {
   position: sticky;
   bottom: 0;
+
+  @include mobile {
+    position: fixed;
+    width: 300px;
+  }
 }
 
 .arrow {
